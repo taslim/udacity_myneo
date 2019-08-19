@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/neo_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/neo_logo"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/neo_cup"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/neo_cup"
+            android:layout_margin="16dp"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintWidth_percent="0.9999999"
+            app:layout_constraintTop_toBottomOf="@id/neo_logo" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kameron"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="One Cup To Rule The Day"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/neo_cup"
+            app:layout_constraintBottom_toBottomOf="@id/neo_cup"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/cta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@android:color/background_light"
+            android:textAllCaps="false"
+            android:text="re:fuel now"
+            android:layout_marginTop="8dp"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tagline"/>
+
+        <ImageView
+            android:id="@+id/neo_drinks"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/neo_drinks"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintWidth_percent="0.28"
+            app:layout_constraintTop_toBottomOf="@id/neo_cup"
+            app:layout_constraintRight_toLeftOf="@id/neo_food" />
+
+        <TextView
+            android:id="@+id/neo_drinks_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:text="DRINKS"
+            app:layout_constraintLeft_toLeftOf="@id/neo_drinks"
+            app:layout_constraintRight_toRightOf="@id/neo_drinks"
+            app:layout_constraintTop_toBottomOf="@id/neo_drinks" />
+
+        <ImageView
+           android:id="@+id/neo_food"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/neo_food"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintWidth_percent="0.28"
+            app:layout_constraintTop_toBottomOf="@id/neo_cup"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"/>
+
+        <TextView
+            android:id="@+id/neo_food_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:text="FOOD"
+            app:layout_constraintTop_toBottomOf="@id/neo_food"
+            app:layout_constraintRight_toRightOf="@id/neo_food"
+            app:layout_constraintLeft_toLeftOf="@id/neo_food"/>
+
+        <ImageView
+            android:id="@+id/neo_in_store"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/neo_in_store"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintWidth_percent="0.28"
+            app:layout_constraintTop_toBottomOf="@id/neo_cup"
+            app:layout_constraintLeft_toRightOf="@id/neo_food" />
+
+        <TextView
+            android:id="@+id/neo_in_store_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:text="IN-STORE"
+            app:layout_constraintLeft_toLeftOf="@id/neo_in_store"
+            app:layout_constraintRight_toRightOf="@id/neo_in_store"
+            app:layout_constraintTop_toBottomOf="@id/neo_in_store" />
+
+        <TextView
+            android:id="@+id/neo_about_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#51291D"
+            android:fontFamily="@font/kameron"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="Neo represents a modern and vibrant approach to celebrating Africa’s coffee heritage. Sourced from the shores of Lake Kivu in the Hills of Rwanda, each coffee bean is nurtured then roasted to perfection to produce that perfect cup. Our name is what we strive to be and since opening our doors in 2012, we have made a commitment to good old fashioned values."
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/neo_food_text" />
+
+        <TextView
+            android:id="@+id/neo_address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:textSize="14sp"
+            android:text="1st Floor, E-center, Sabo-Yaba, Lagos."
+            android:layout_marginTop="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/neo_about_text"/>
+
+        <TextView
+            android:id="@+id/neo_website_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:textSize="14sp"
+            android:text="www.mycafeneo.com"
+            android:layout_marginTop="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/neo_address_text"/>
+
+        <TextView
+            android:id="@+id/neo_hours_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:textSize="14sp"
+            android:text="8:00 a.m. to 8:00 p.m."
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/neo_website_text"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
